@@ -1,0 +1,28 @@
+:root{
+    margin: 0px ;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh; /* Agar vertikal juga tengah */
+}
+
+
+.card {
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 10px solid;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 20px 30px 10px rgb(188, 95, 95);
+}
+
+h1{
+    margin: 10px;
+    text-align: center;
+}
+
+

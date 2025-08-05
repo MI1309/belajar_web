@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulir</title>
+</head>
+<body>
+    <h1>formulir siswa</h1>
+    <form action="#">
+        <label for="username">name</label>
+        <input type="text" name="username" id="username">
+        <br>
+        <label for="email">email : </label>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="password">password</label>
+        <input type="password" name="password" id="password">
+        <br>
+        <label for="gender">jenis kelamin</label>
+        <br>
+        <label for="laki">laki laki</label>
+        <input type="radio" name="laki" id="laki">
+        <label for="perempuan">perempuan</label>
+        <input type="radio" name="perempuan" id="perempuan">
+        <br>
+        <label for="hobi[]">hobi</label>
+        <br>
+        <input type="checkbox" name="hobi[]" id="hobi[]" value="membaca">membaca
+        <input type="checkbox" name="hobi[]" id="hobi[]" value="bermain">bermain
+        <input type="checkbox" name="hobi[]" id="hobi[]" value="ngoding">ngoding
+        <br>
+        <label for="kelas">pilih kelas :</label>
+        <select name="kelas" id="kelas">
+            <option value="xiirpl2">XII RPL2 </option>
+            <option value="xiirpl1">XII RPL1 </option>
+        </select>
+        <br>
+        <label for="file">upload gambar</label>
+        <input type="file" name="file" id="file">
+        <br>
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>

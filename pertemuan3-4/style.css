@@ -11,7 +11,6 @@ body {
 
 
 .card {
-    flex-direction: row;
     margin-top: 10px;
     margin-bottom: 10px;
     border: 10px solid;

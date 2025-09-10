@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LKPD 2 - Grid</title>
+  <style>
+    body { 
+        margin:0; 
+        font-family:sans-serif; 
+    }
+
+    .gallery {
+    /* display grid untuk memberi gambar berbentuk kolom dan untuk grid template colum memberi display kolom kebawah  */
+      display:grid; 
+    /* ketika  diberi repeat auto-fit dan dengan minmax 220px 1 fr / 1 frame, class gallery akan auto menyesuaikan dengan min lebar 220px dan 1 frame kebawah jika lebar layar berubah*/
+    /* autofit akan menyesuaikan otomatis ruang kolom yng kosong, minmax utk mengatur ukuran minim dan maks sebuah kolom, itu dengan contoh 220px lebar tinggi dan 1 frame */
+      grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+      /* gap untuk pemberian jarak gambar yang ada di dalam satu elemen */
+      gap:16px; 
+      padding:24px;
+    }
+    .card {
+      background:#fff; 
+      border:1px solid #e5e7eb;
+      border-radius:10px; 
+      padding:12px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card img { 
+        width:100%; 
+        border-radius:8px; 
+    }
+    .card h3 { 
+        margin:8px 0 4px; 
+    }
+    .card p { 
+        margin:0; 
+        color:#475569; 
+    }
+  </style>
+</head>
+<body>
+  <section class="gallery">
+    <div class="card"><img src="https://avatars.githubusercontent.com/u/144302456?v=4"><h3>Project A</h3><p>Deskripsi</p></div>
+    <div class="card"><img src="https://avatars.githubusercontent.com/u/144302456?v=4"><h3>Project B</h3><p>Deskripsi</p></div>
+    <div class="card"><img src="https://avatars.githubusercontent.com/u/144302456?v=4"><h3>Project C</h3><p>Deskripsi</p></div>
+    <div class="card"><img src="https://avatars.githubusercontent.com/u/144302456?v=4"><h3>Project D</h3><p>Deskripsi</p></div>
+    <div class="card"><img src="https://avatars.githubusercontent.com/u/144302456?v=4"><h3>Project E</h3><p>Deskripsi</p></div>
+    <div class="card"><img src="https://avatars.githubusercontent.com/u/144302456?v=4"><h3>Project F</h3><p>Deskripsi</p></div>
+  </section>
+</body>
+</html>

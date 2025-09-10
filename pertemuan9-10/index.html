@@ -1,0 +1,83 @@
+<!-- flexbox -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LKPD 1 - Flexbox</title>
+  <style>
+
+    /* penetapan font dan margin */
+    body { 
+        margin:0; 
+        font-family:sans-serif; 
+    }
+
+    /* navbar dibuat flex agar bisa diatur arahnya dan memberikan justify content center agar memberi spasi antar elemen item pertama yaitu brand ke kiri dan item menu kekanan sehingga layout lebih rapi*/
+    .nav {
+      display:flex; 
+      justify-content:space-between; 
+      align-items:center;
+      padding:18px 20px; 
+      background:#0f172a; 
+      color:#fff;
+    }
+    .menu { 
+        display:flex; 
+        gap:20px; 
+    }
+    .menu a { 
+        color:#cbd5e1; 
+        text-decoration:none; 
+    }
+    .menu a:hover { 
+        color:#fff; 
+    }
+    .hero {
+      display:flex; 
+      align-items:center; 
+      justify-content:space-between;
+      gap:24px; 
+      padding:40px 20px; 
+      background:#f8fafc;
+    }
+    .hero .text { 
+        max-width:480px;
+     }
+    .btn {
+      display:inline-block; 
+      padding:10px 16px; 
+      background:#2563eb;
+      color:#fff; 
+      border-radius:8px; 
+      text-decoration:none;
+    }
+    .btn:hover { 
+        background:#1d4ed8;
+     }
+    img { 
+        max-width:100%; 
+        height:auto; 
+        border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="brand">ImronDev</div>
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Kontak</a>
+    </div>
+  </nav>
+  <section class="hero">
+    <div class="text">
+      <h1>Belajar Flexbox</h1>
+      <p>Flexbox mempermudah penyusunan elemen horizontal/vertikal.</p>
+      <a href="#" class="btn">Mulai</a>
+    </div>
+    <img src="https://avatars.githubusercontent.com/u/144302456?v=4" width="200px" height="200px" alt="Hero Image">
+  </section>
+</body>
+</html>
